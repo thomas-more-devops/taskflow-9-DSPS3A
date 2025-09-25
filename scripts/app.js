@@ -21,7 +21,7 @@ class TaskFlow {
 
     bindEvents() {
         const addTaskBtn = document.getElementById('addTaskBtn');
-        const taskInput = document.getElementById('taskInput');
+        const taskInput = document.getElementById('taskInput'); // Input field for adding tasks
 
         addTaskBtn.addEventListener('click', () => this.addTask());
         
@@ -185,7 +185,13 @@ class TaskFlow {
             return 1;
         }
     }
+    /// ^^^^Comment on The Code^^^^
 
+    // This code implements a TaskFlow task management app in JavaScript. 
+    // It manages tasks using local storage, providing features like adding, 
+    // editing, deleting, toggling completion, statistics tracking, and notifications. 
+    // It also supports exporting tasks as JSON and clearing all tasks. 
+    // The UI dynamically updates with DOM manipulation and tasks are sorted by completion status and creation date.
     escapeHtml(unsafe) {
         return unsafe
             .replace(/&/g, "&amp;")
