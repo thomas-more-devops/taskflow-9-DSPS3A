@@ -35,9 +35,11 @@ class TaskFlow {
         taskInput.focus();
     }
 
-    addTask() {
+addTask() {
         const taskInput = document.getElementById('taskInput');
+        const categorySelect = document.getElementById('categorySelect');
         const taskText = taskInput.value.trim();
+        const category = categorySelect.value;
 
         if (taskText === '') {
             this.showNotification('Please enter a task description', 'warning');
@@ -58,13 +60,13 @@ class TaskFlow {
         this.saveTasks();
         this.renderTasks();
         this.updateStats();
-        
+
         taskInput.value = '';
+        categorySelect.value = 'personal';
         taskInput.focus();
-        
+
         this.showNotification('Task added successfully!', 'success');
     }
-
     deleteTask(taskId) {
         if (confirm('Are you sure you want to delete this task?')) {
             this.tasks = this.tasks.filter(task => task.id !== taskId);
