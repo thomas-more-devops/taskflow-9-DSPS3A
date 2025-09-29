@@ -24,19 +24,26 @@
         </header>
         
 
-         <!-- Main content area -->
         <main class="main">
-            <!-- Task input field and button -->
             <div class="task-input-section">
                 <div class="input-container">
                     <input type="text" id="taskInput" placeholder="What needs to be done?" class="task-input">
+                    <div class="input-options">
+                        <select id="categorySelect" class="category-select">
+                            <option value="personal">📝 Personal</option>
+                            <option value="work">💼 Work</option>
+                            <option value="shopping">🛒 Shopping</option>
+                            <option value="health">🏥 Health</option>
+                            <option value="study">📚 Study</option>
+                        </select>
+                    </div>
                     <button id="addTaskBtn" class="add-btn">
                         <span class="add-icon">+</span>
                         Add Task
                     </button>
                 </div>
             </div>
-            
+
             <!-- Category Filter Section -->
             <div class="category-filters">
                 <h3>Filter by Category:</h3>
