@@ -48,6 +48,7 @@ class TaskFlow {
         const newTask = {
             id: this.taskIdCounter++,
             text: taskText,
+            category: category,
             completed: false,
             createdAt: new Date().toISOString(),
             completedAt: null
