@@ -29,14 +29,7 @@
             <!-- Task input field and button -->
             <div class="task-input-section">
                 <div class="input-container">
-                    <input type="text" id="taskInput" placeholder="What needs to be done?" class="task-input">
-                    <div class="input-options">
-                        <select id="prioritySelect" class="priority-select">
-                            <option value="medium">Medium Priority</option>
-                            <option value="high">High Priority</option>
-                            <option value="low">Low Priority</option>
-                        </select>
-                    </div>
+                    <input type="text" id="taskInput" placeholder="Enter your task..." class="task-input">
                     <button id="addTaskBtn" class="add-btn">
                         <span class="add-icon">+</span>
                         Add Task
@@ -44,7 +37,14 @@
                 </div>
             </div>
 
-             <!-- Task list section -->
+            <div class="due-date-filters">
+                <h3>Filter by Due Date:</h3>
+                <div class="due-date-filter-buttons">
+                    <button class="due-date-filter-btn active" data-filter="all">
+                        <span class="filter-icon">📋</span>
+                        All Tasks
+                    </button>
+                  <!-- Task list section -->
             <div class="tasks-section">
                 <div class="tasks-header">
                     <h2>Your Tasks</h2>
